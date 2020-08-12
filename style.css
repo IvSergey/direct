@@ -1,0 +1,438 @@
+@font-face {
+    font-family: 'Akrobat';
+    src: url('./fonts/Akrobat/Akrobat-Regular.eot');
+    src: url('./fonts/Akrobat/Akrobat-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Akrobat/Akrobat-Regular.woff') format('woff'),
+    url('./fonts/Akrobat/Akrobat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arctika';
+    src: url('./fonts/Arcticascript/Arctikascript.eot');
+    src: url('./fonts/Arcticascript/Arctikascript.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Arcticascript/Arctikascript.woff') format('woff'),
+    url('./fonts/Arcticascript/Arctikascript.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background: url('./img/background/bg.png');
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    max-width: 960px;
+}
+
+header{
+    background-color: #749c8d;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.header__content{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo__text{
+    text-transform: uppercase;
+    color: white;
+    margin-left: 10px;
+    font-size: 26px;
+    position: relative;
+    top: 10px;
+}
+
+.socials__list{
+    display: flex;
+}
+
+.socials__item{
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+
+
+.socials__item--vk{
+    background: url('./img/icons/vk-icon.png') center center no-repeat;
+}
+
+.socials__item--inst{
+    background: url('./img/icons/instagram-icon.png') center center no-repeat;
+}
+
+.socials__item--fb{
+    background: url('./img/icons/fb-icon.png') center center no-repeat;
+}
+
+
+
+.banner{
+
+    background: url('./img/background/banner.png');
+    background-size: 100% 100%;
+
+}
+
+.banner__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 445px; */
+}
+
+.banner__title{
+    display: flex;
+    align-self: center;
+    font-family: "Arctika";
+    font-size: 108.33px;
+    color: #de2c2f;
+    text-shadow: -5px 5px 2px white;
+    width: 25%;
+    padding-bottom: 12%;
+    padding-top: 7%;
+    line-height: 80%;
+}  
+
+
+
+.title{
+    background: url('./img/background/main-bg.png') center center no-repeat;
+    position: relative;
+    top: -100px;
+}
+
+.title__text{
+    font-size: 48px;
+    font-weight: normal;
+    font-family: 'Akrobat';
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 60px;
+
+}
+
+
+.other{
+    font-size: 62px;
+    color: #de4814;
+}
+
+.title__text:before{
+    content: "";
+    width: 60px;
+    height: 80px;
+    background: url('./img/icons/arrow-left.png') center center no-repeat;
+    position: absolute;
+    left: 3%;
+    top: 50%;
+}
+
+.title__text:after{
+    content: "";
+    width: 60px;
+    height: 80px;
+    background: url('./img/icons/arrow-right.png') center center no-repeat;
+    position: absolute;
+    right: 3%;
+    top: 50%;
+}
+
+/* .content__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
+
+.content__item{
+    width: 45%;
+    margin-bottom: 5%;
+    position: relative;
+    background-color: #e4e9ee;
+    box-shadow: 0 0 10px 5px rgba(229, 229, 229, 1);
+    border: 2px solid #e4e4e4;
+}
+
+.content__item:before{
+    content: "70%";
+    padding-left: 11%;
+    padding-top: 4%;
+    font-size: 26px;
+    font-family: 'Akrobat';
+    font-weight: bold;
+    color: #fff;
+    width: 106px;
+    height: 90px;
+    background: url('./img/background/sale.png');
+    position: absolute;
+    right: -3%;
+    top: -13px;
+}
+
+.content__item:nth-child(even){
+    margin-left: 10%;
+}
+
+.product__proposal{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+}
+
+.product__img{
+    width: 45%;
+}
+
+.product__pic{
+    width: 100%;
+}
+
+.product__desc{
+    width: 50%;
+}
+
+.product__price{
+    background-color: #fff;
+    padding-left: 10%;
+    font-size: 30px;
+}
+
+.product__price-old{
+    width: 45%;
+    font-family: 'Arial';
+    text-decoration: line-through;
+    font-size: 20px;
+}
+
+.product__price-old p{
+    margin-bottom: 0;
+}
+
+.product__price-actual{
+    width: 45%;
+    font-family: 'Akrobat';
+    font-size: 28px;
+    color: #d8481c;
+}
+
+.product__btns{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.product__order-btn{
+    width: 100%;
+    background-color: #3ab16f;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Akrobat';
+    font-size: 25px;
+    border: none; 
+    outline: none;
+    margin-bottom: 5%;
+}
+
+.product__more-btn{
+    width: 100%;
+    font-size: 22px;
+    font-family: 'Akrobat';
+    color: #b83b11; 
+    border:1px solid #e96c41;
+    outline: none;
+    margin-bottom: 5%;
+}
+
+.product__info{
+    text-align: right;
+    color: #b3533f;
+    font-family: 'Akrobat';
+    font-size: 16px;
+    
+}
+
+.product__info-text{
+    border-bottom: 1px dashed #b3533f;
+}
+
+.product__description{
+    margin-left: 6%;
+    margin-bottom: 30%;
+}
+
+.product__title{
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: 'Akrobat';
+    line-height: 1.4;
+}
+
+.product__title-underline{
+    width: 100%;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+
+.product__text{
+    font-family: 'Akrobat';
+    font-size: 20px;
+    color: #004734;
+}
+
+
+.product__socials{
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 2%;
+    padding-bottom: 3%;
+}
+
+.product__socials-title{
+    font-size: 15px;
+    color: #828384;
+    text-align: center;
+}
+
+.social__list{
+    display: flex;
+    padding-left: 6%;
+}
+
+.vk{
+    width:28px; 
+    height:28px; 
+    background:url('./img/icons/sprite.png') 0 0;
+    margin-right: 10px;
+}
+
+.inst{
+    width:28px; 
+    height:28px; 
+    background:url('./img/icons/sprite.png') 11% 0;
+    margin-right: 10px;
+}
+.fb{
+    width:28px; 
+    height:28px; 
+    background:url('./img/icons/sprite.png') 22% 0;
+    margin-right: 10px;
+}
+.class{
+    width:28px; 
+    height:28px; 
+    background:url('./img/icons/sprite.png') 33% 0;
+    margin-right: 10px;
+}
+.youtube{
+    width:28px; 
+    height:28px; 
+    background:url('./img/icons/sprite.png') 44% 0;
+    margin-right: 10px;
+}
+.in{
+    width:28px; 
+    height:28px; 
+    background:url('./img/icons/sprite.png') 55% 0;
+    margin-right: 10px;
+}
+.pencil{
+    width:28px; 
+    height:28px; 
+    background:url('./img/icons/sprite.png') 66% 0;
+    margin-right: 10px;
+}
+.smile{
+    width:28px; 
+    height:28px; 
+    background:url('./img/icons/sprite.png') 78% 0;
+    margin-right: 10px;
+}
+.ya{
+    width:28px; 
+    height:28px; 
+    background:url('./img/icons/sprite.png') 89% 0;
+    margin-right: 10px;
+}
+.google{
+    width:28px; 
+    height:28px; 
+    background:url('./img/icons/sprite.png') 100% 0;
+    margin-right: 10px;
+}
+
+.feedback{
+    background-color: #80c9b0;
+    border: 1px dashed black;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.feedback:before{
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background: url('./img/icons/double-arrow-left.png') center center no-repeat;
+    left: -15%;
+}
+.feedback:after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background: url('./img/icons/double-arrow-right.png') center center no-repeat;
+    right: -15%;
+    top: 0;
+}
+
+.form-inline{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+.form-group{
+    width: 33%;
+}
+
+.form-inline .form-control{
+    width: 100%;
+    border: 1px solid #56907c;
+}
+
+.btn-primary{
+    background: #de0d08;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    height: 34px;
+}
+
+.footer{
+    background-color: #a4a4a5;
+    padding:5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
