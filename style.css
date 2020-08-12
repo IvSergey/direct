@@ -48,7 +48,7 @@ header{
     position: fixed;
     top:0;
     width: 100%;
-    z-index: 5;
+    z-index: 15;
 }
 
 .header__content{
@@ -378,7 +378,7 @@ header{
     color: #b3533f;
     font-family: 'Akrobat';
     font-size: 16px;
-    
+    cursor: pointer;
 }
 
 
@@ -620,17 +620,8 @@ header{
 
 
 .info__description{
-    position: absolute;
-    display: block;
-    font-family: 'Akrobat';
-    font-size: 20px;
-    color: #004734;
-    background-color: white;
-    top: 38%;
-    z-index: 10;
-    height: 62%;
-    /* width: 100%; */
-    left: 0;
+    display: none;
+
 }
 
 .info__description:before {
@@ -683,3 +674,17 @@ header{
     /* padding-left: 6%; */
     padding-right: 5%;
 }
+
+.info__description--show {
+    position: absolute;
+    display: block;
+    font-family: 'Akrobat';
+    font-size: 20px;
+    color: #004734;
+    background-color: white;
+    top: 38%;
+    z-index: 10;
+    height: 62%;
+    /* width: 100%; */
+    left: 0;
+  }
